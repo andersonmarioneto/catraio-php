@@ -45,13 +45,13 @@ $dbname = "defaultdb";
 $username = "avnadmin";
 $password = "AVNS_45naHB8nkMmERTdNr00";
 
-$ca_cert_path = __DIR__ . "/ca.pem";
+//$ca_cert_path = __DIR__ . "/ca.pem";
 
 $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";
 
 try {
     $options = [
-        PDO::MYSQL_ATTR_SSL_CA => $ca_cert_path,
+        //PDO::MYSQL_ATTR_SSL_CA => $ca_cert_path,
         PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ];
